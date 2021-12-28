@@ -1,7 +1,18 @@
+/********** FOOTER **********/
 footer {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: grey;
+    background-color:#585858;
     color: white;
 }
+
+footer h2 {
+    font-family: $font-logo;
+    font-weight: 100;
+    margin: 0;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+/********** FIN FOOTER **********/

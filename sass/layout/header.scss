@@ -1,9 +1,14 @@
 /********** HEADER **********/
 header {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.logo {
+    font-family: $font-logo;
+    font-weight: 100;
+}
+/********** FIN HEADER **********/
