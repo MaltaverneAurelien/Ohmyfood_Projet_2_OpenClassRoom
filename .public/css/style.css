@@ -44,29 +44,24 @@ body {
 
 /********** FIN BODY **********/
 /********** MENU **********/
-.menu {
-  background-color: #F7F7F7;
-}
-
 .menu_formulaire {
-  /* */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F0F0F0;
+  background-color: #E9E9E9;
   padding: 15px;
 }
 
 .menu_formulaire span {
   font-size: 15px;
   padding-right: 15px;
-  color: dimgrey;
+  color: #696969;
 }
 
 .menu_formulaire input {
   font-size: 17px;
   font-weight: bold;
-  background-color: #F2F2F2;
+  background-color: #E9E9E9;
   border: none;
 }
 
@@ -75,6 +70,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F2F2F2;
 }
 
 .menu_explorer h1 {
@@ -87,13 +83,16 @@ body {
 }
 
 .menu_explorer a {
-  padding: 20px;
+  padding: 15px 20px 15px 20px;
+  margin: 30px 0 60px 0;
+  text-align: center;
   color: white;
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
-  background-color: #FF79DA;
-  box-shadow: 4px 4px blueviolet;
+  background: linear-gradient(90deg, #FF79DA, #9356DC, #FF79DA, #9356DC);
+  background-size: 400%;
   border-radius: 30px;
-  margin: 30px 0 70px 0;
 }
 
 /********** FIN MENU **********/
@@ -115,6 +114,8 @@ body {
 
 .carte_fonctionnement {
   display: flex;
+  align-items: center;
+  width: 90%;
   height: 70px;
   margin: 20px;
   background-color: #F2F2F2;
@@ -122,8 +123,15 @@ body {
   border-radius: 15px;
 }
 
-.carte_fonctionnement .carte_nom {
+.carte_fonctionnement a {
   display: flex;
+  align-items: center;
+  color: #696969;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.carte_fonctionnement h4 {
   margin: 0;
   color: black;
 }

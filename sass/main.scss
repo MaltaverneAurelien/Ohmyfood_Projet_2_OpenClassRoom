@@ -15,28 +15,24 @@ body {
 }
 /********** FIN BODY **********/
 /********** MENU **********/
-.menu {
-  background-color: #F7F7F7;
-}
-
-.menu_formulaire { /* */
+.menu_formulaire {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F0F0F0;
+  background-color: $color-background;
   padding: 15px;
 }
 
 .menu_formulaire span {
   font-size: 15px;
   padding-right: 15px;
-  color: dimgrey;
+  color: $color-icone;
 }
 
 .menu_formulaire input {
   font-size: 17px;
   font-weight: bold;
-  background-color: #F2F2F2;
+  background-color: $color-background;
   border: none;
 }
 
@@ -45,6 +41,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $color-background-carte;
 }
 
 .menu_explorer h1 {
@@ -57,13 +54,16 @@ body {
 }
 
 .menu_explorer a {
-  padding: 20px;
-  color: white;
-  text-decoration: none;
-  background-color: $color-secondary;
-  box-shadow: 4px 4px blueviolet;
-  border-radius: 30px;
-  margin: 30px 0 70px 0;
+    padding: 15px 20px 15px 20px;
+    margin: 30px 0 60px 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background: linear-gradient(90deg, $color-secondary, $color-primaire, $color-secondary, $color-primaire);
+    background-size: 400%;
+    border-radius: 30px;
 }
 /********** FIN MENU **********/
 /********** CONTENUE FONCTIONNEMENT ET RESTAURANT **********/
@@ -83,22 +83,31 @@ body {
 
 .carte_fonctionnement {
   display: flex;
+  align-items: center;
+  width: 90%;
   height: 70px;
   margin: 20px;
-  background-color: #F2F2F2;
+  background-color: $color-background-carte;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 15px;
 }
 
-.carte_fonctionnement .carte_nom {
+.carte_fonctionnement a {
   display: flex;
+  align-items: center;
+  color: $color-icone;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.carte_fonctionnement h4 {
   margin: 0;
   color: black;
 }
 /********** FIN FONCTIONNEMENT **********/
 /********** RESTAURANT **********/
 .restaurants {
-  background-color: #F2F2F2;
+  background-color: $color-background-carte;
 }
 
 .restaurants h1 {
