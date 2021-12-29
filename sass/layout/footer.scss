@@ -1,7 +1,7 @@
 /********** FOOTER **********/
 footer {
     width: 100%;
-    background-color:#585858;
+    background-color:#3a3a3a;
     color: white;
 }
 
@@ -9,7 +9,7 @@ footer h2 {
     font-family: $font-logo;
     font-weight: 100;
     margin: 0;
-    padding: 20px;
+    padding: 17px;
 }
 
 footer ul {
@@ -21,6 +21,21 @@ footer ul {
 }
 
 footer li {
-    padding: 3px;
+    padding: 5px 0;
 }
+
+footer i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.footer_icone {
+    display: flex;
+    align-items: center;
+}
+
 /********** FIN FOOTER **********/
