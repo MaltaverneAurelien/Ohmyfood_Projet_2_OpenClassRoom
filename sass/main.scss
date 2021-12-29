@@ -25,7 +25,7 @@ body {
 
 .menu_formulaire span {
   font-size: 15px;
-  padding-right: 15px;
+  padding: 0 15px 0 70px;
   color: $color-icone;
 }
 
@@ -45,10 +45,12 @@ body {
 }
 
 .menu_explorer h1 {
+  text-align: center;
   margin: 30px 50px 20px 50px;
 }
 
 .menu_explorer p {
+  text-align: center;
   font-weight: 300;
   margin: 0 30px 0 30px;
 }
@@ -78,7 +80,7 @@ body {
 }
 
 .fonctionnement h1 {
-  margin: 40px 0 20px 15px;
+  margin: 40px 15px 20px 15px;
 }
 
 .carte_fonctionnement {
@@ -89,11 +91,13 @@ body {
   margin: 20px;
   background-color: $color-background-carte;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  border-radius: 15px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .carte_fonctionnement a {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: $color-icone;
   text-decoration: none;
@@ -103,6 +107,24 @@ body {
 .carte_fonctionnement h4 {
   margin: 0;
   color: black;
+}
+
+.carte_fonctionnement i {
+  font-size: 15px;
+  padding: 0 25px 0 35px;
+}
+
+.carte_fonctionnement p {
+  position: absolute;
+  font-size: 9px;
+  justify-content: center;
+  align-items: center;
+  margin: -10px;
+  padding: 5px 8px;
+  color: white;
+  background-color: $color-primaire;
+  border-radius: 100%;
+  
 }
 /********** FIN FONCTIONNEMENT **********/
 /********** RESTAURANT **********/
