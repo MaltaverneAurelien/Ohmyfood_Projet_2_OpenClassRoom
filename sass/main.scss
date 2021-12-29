@@ -2,6 +2,7 @@
 @import "./utils/functions.scss";
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/menu.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
@@ -18,48 +19,48 @@ body {
   padding: 0;
 }
 /********** FIN BODY **********/
-/********** MENU **********/
-.menu_formulaire {
+/********** ACCUEIL **********/
+.accueil_formulaire {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-background;
+  background-color: $color-background-secondary;
   padding: 15px;
 }
 
-.menu_formulaire span {
+.accueil_formulaire span {
   font-size: 15px;
   padding: 0 15px 0 70px;
   color: $color-icone;
 }
 
-.menu_formulaire input {
+.accueil_formulaire input {
   font-size: 17px;
   font-weight: bold;
-  background-color: $color-background;
+  background-color: $color-background-secondary;
   border: none;
 }
 
-.menu_explorer {
+.accueil_explorer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-background-carte;
+  background-color: $color-background-teriaire;
 }
 
-.menu_explorer h1 {
+.accueil_explorer h1 {
   text-align: center;
   margin: 30px 50px 20px 50px;
 }
 
-.menu_explorer p {
+.accueil_explorer p {
   text-align: center;
   font-weight: 300;
   margin: 0 30px 0 30px;
 }
 
-.menu_explorer a {
+.accueil_explorer a {
     padding: 15px 20px 15px 20px;
     margin: 30px 0 60px 0;
     text-align: center;
@@ -71,13 +72,13 @@ body {
     background-size: 400%;
     border-radius: 30px;
 }
-/********** FIN MENU **********/
-/********** CONTENU FONCTIONNEMENT ET RESTAURANT **********/
+/********** FIN ACCUEIL **********/
+/********** BLOC FR **********/
 .contenu_fr {
   display: flex;
   flex-direction: column;
 }
-/********** FIN CONTENU FONCTIONNEMENT ET RESTAURANT **********/
+/********** FIN BLOC FR **********/
 /********** FONCTIONNEMENT **********/
 .fonctionnement {
   margin-bottom: 40px;
@@ -93,7 +94,7 @@ body {
   width: 90%;
   height: 70px;
   margin: 20px;
-  background-color: $color-background-carte;
+  background-color: $color-background-teriaire;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 20px;
   position: relative;
@@ -113,7 +114,7 @@ body {
   color: black;
 }
 
-.carte_fonctionnement i {
+.carte_fonctionnement span {
   font-size: 15px;
   padding: 0 25px 0 35px;
 }
@@ -128,12 +129,12 @@ body {
   color: white;
   background-color: $color-primaire;
   border-radius: 100%;
-  
 }
 /********** FIN FONCTIONNEMENT **********/
 /********** RESTAURANT **********/
 .restaurants {
-  background-color: $color-background-carte;
+  background-color: $color-background-secondary;
+  padding-bottom: 40px;
 }
 
 .restaurants h1 {
@@ -145,7 +146,7 @@ body {
   flex-direction: column;
   height: 200px;
   margin: 20px;
-  background-color: white;
+  background-color: $color-background-primaire;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 15px;
 }
@@ -185,10 +186,11 @@ body {
   display: flex;
 }
 
-.carte_contenu i {
+.carte_contenu span {
   font-size: 20px;
   display: flex;
   align-items: center;
   padding-left: 60px;
+  color: black;
 }
 /********** FIN RESTAURANT **********/

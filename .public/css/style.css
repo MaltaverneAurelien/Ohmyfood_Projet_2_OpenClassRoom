@@ -55,6 +55,78 @@ footer i {
 }
 
 /********** FIN FOOTER **********/
+/********** MENU **********/
+.menu .carte_image {
+  object-fit: cover;
+}
+
+.menu_contenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-bottom: 40px;
+}
+
+.menu_contenu h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+
+/********** TITRE DU MENU **********/
+.menu_titre {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu_titre span {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+/********** FIN TITRE DU MENU **********/
+/********** BLOC POUR LE PLAT **********/
+.menu_plat {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 70px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+}
+
+.menu_plat a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #696969;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu_plat h4 {
+  margin: 0;
+  color: black;
+}
+
+.menu_plat p {
+  margin: 0;
+  color: black;
+}
+
+.menu_plat span {
+  position: absolute;
+  font-size: 15px;
+  padding-left: 220px;
+}
+
+/********** FIN BLOC POUR LE PLAT **********/
+/********** FIN MENU **********/
 html {
   height: 100%;
 }
@@ -69,48 +141,48 @@ body {
 }
 
 /********** FIN BODY **********/
-/********** MENU **********/
-.menu_formulaire {
+/********** ACCUEIL **********/
+.accueil_formulaire {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E9E9E9;
+  background-color: #F2F2F2;
   padding: 15px;
 }
 
-.menu_formulaire span {
+.accueil_formulaire span {
   font-size: 15px;
   padding: 0 15px 0 70px;
   color: #696969;
 }
 
-.menu_formulaire input {
+.accueil_formulaire input {
   font-size: 17px;
   font-weight: bold;
-  background-color: #E9E9E9;
+  background-color: #F2F2F2;
   border: none;
 }
 
-.menu_explorer {
+.accueil_explorer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F2F2F2;
+  background-color: #F8F8F8;
 }
 
-.menu_explorer h1 {
+.accueil_explorer h1 {
   text-align: center;
   margin: 30px 50px 20px 50px;
 }
 
-.menu_explorer p {
+.accueil_explorer p {
   text-align: center;
   font-weight: 300;
   margin: 0 30px 0 30px;
 }
 
-.menu_explorer a {
+.accueil_explorer a {
   padding: 15px 20px 15px 20px;
   margin: 30px 0 60px 0;
   text-align: center;
@@ -123,14 +195,14 @@ body {
   border-radius: 30px;
 }
 
-/********** FIN MENU **********/
-/********** CONTENU FONCTIONNEMENT ET RESTAURANT **********/
+/********** FIN ACCUEIL **********/
+/********** BLOC FR **********/
 .contenu_fr {
   display: flex;
   flex-direction: column;
 }
 
-/********** FIN CONTENU FONCTIONNEMENT ET RESTAURANT **********/
+/********** FIN BLOC FR **********/
 /********** FONCTIONNEMENT **********/
 .fonctionnement {
   margin-bottom: 40px;
@@ -146,7 +218,7 @@ body {
   width: 90%;
   height: 70px;
   margin: 20px;
-  background-color: #F2F2F2;
+  background-color: #F8F8F8;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   position: relative;
@@ -166,7 +238,7 @@ body {
   color: black;
 }
 
-.carte_fonctionnement i {
+.carte_fonctionnement span {
   font-size: 15px;
   padding: 0 25px 0 35px;
 }
@@ -187,6 +259,7 @@ body {
 /********** RESTAURANT **********/
 .restaurants {
   background-color: #F2F2F2;
+  padding-bottom: 40px;
 }
 
 .restaurants h1 {
@@ -238,11 +311,12 @@ body {
   display: flex;
 }
 
-.carte_contenu i {
+.carte_contenu span {
   font-size: 20px;
   display: flex;
   align-items: center;
   padding-left: 60px;
+  color: black;
 }
 
 /********** FIN RESTAURANT **********/
