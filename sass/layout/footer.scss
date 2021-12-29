@@ -13,6 +13,14 @@ footer h2 {
 }
 
 footer ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 25px 15px;
     list-style-type: none;
+}
+
+footer li {
+    padding: 3px;
 }
 /********** FIN FOOTER **********/

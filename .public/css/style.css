@@ -29,10 +29,22 @@ footer h2 {
 }
 
 footer ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 25px 15px;
   list-style-type: none;
 }
 
+footer li {
+  padding: 3px;
+}
+
 /********** FIN FOOTER **********/
+html {
+  height: 100%;
+}
+
 /********** BODY **********/
 body {
   font-family: "Roboto", sans-serif;
@@ -177,28 +189,46 @@ body {
   border-radius: 15px;
 }
 
+.carte_restaurant a {
+  text-decoration: none;
+}
+
 .carte_restaurant .carte_image {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   object-fit: cover;
   width: 100%;
-  height: 120px;
+  height: 130px;
 }
 
-.carte_restaurant .carte_contenu {
+.carte_restaurant .carte_titre {
   padding-left: 20px;
+  width: 60%;
 }
 
-.carte_restaurant .carte_nom {
+.carte_titre h4 {
   display: flex;
   margin: 0;
+  padding: 10px 0 5px 0;
   color: black;
 }
 
-.carte_restaurant .carte_plat {
+.carte_titre p {
   display: flex;
   margin: 0;
+  font-size: 15px;
   color: black;
+}
+
+.carte_contenu {
+  display: flex;
+}
+
+.carte_contenu i {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
 }
 
 /********** FIN RESTAURANT **********/
