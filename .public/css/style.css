@@ -58,6 +58,8 @@ footer i {
 /********** MENU **********/
 .menu .carte_image {
   object-fit: cover;
+  width: 100%;
+  height: 200px;
 }
 
 .menu_contenu {
@@ -66,7 +68,7 @@ footer i {
   background-color: #F2F2F2;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 4em;
 }
 
 .menu_contenu h1 {
@@ -90,42 +92,69 @@ footer i {
 /********** BLOC POUR LE PLAT **********/
 .menu_plat {
   display: flex;
-  align-items: center;
-  width: 90%;
-  height: 70px;
-  margin: 20px;
-  background-color: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  position: relative;
+  flex-direction: column;
+  margin: 0;
+  padding: 1.3em;
 }
 
 .menu_plat a {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #696969;
+  width: 100%;
+  height: 70px;
+  margin: 0 0 1em 0;
+  padding: 0.2em;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: black;
   text-decoration: none;
-  list-style-type: none;
+  position: relative;
+}
+
+.menu_plat h3 {
+  font-weight: 300;
+  width: 2.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 0.2em solid #99E2D0;
 }
 
 .menu_plat h4 {
+  font-size: 19px;
   margin: 0;
-  color: black;
+  padding: 0.4em;
 }
 
 .menu_plat p {
+  font-size: 14px;
   margin: 0;
-  color: black;
+  padding: 0.4em;
 }
 
 .menu_plat span {
   position: absolute;
-  font-size: 15px;
-  padding-left: 220px;
+  font-weight: bold;
+  padding-left: 85%;
+  padding-top: 12%;
 }
 
 /********** FIN BLOC POUR LE PLAT **********/
+/********** BOUTTON COMMANDER **********/
+.boutton_commander a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(90deg, #FF79DA, #9356DC, #FF79DA, #9356DC);
+  background-size: 400%;
+  border-radius: 30px;
+}
+
+/********** FIN BOUTTON COMMANDER **********/
 /********** FIN MENU **********/
 html {
   height: 100%;
