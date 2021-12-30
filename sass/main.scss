@@ -23,9 +23,7 @@ body {
 
 /********** ACCUEIL **********/
 .accueil_formulaire {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
   background-color: $color-background-secondary;
   padding: 15px;
 }
@@ -44,10 +42,8 @@ body {
 }
 
 .accueil_explorer {
-  display: flex;
+  @include center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: $color-background-teriaire;
 }
 
@@ -63,7 +59,7 @@ body {
 }
 
 .accueil_explorer a {
-  text-decoration: none;
+  @include text_list_none;
 }
 /********** FIN ACCUEIL **********/
 
@@ -82,8 +78,7 @@ body {
 }
 
 .carte_fonctionnement {
-  display: flex;
-  align-items: center;
+  @include center;
   width: 90%;
   height: 70px;
   margin: 20px;
@@ -98,8 +93,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: $color-icone;
-  text-decoration: none;
-  list-style-type: none;
+  @include text_list_none;
 }
 
 .carte_fonctionnement h4 {
@@ -113,10 +107,9 @@ body {
 }
 
 .carte_fonctionnement p {
+  @include center;
   position: absolute;
   font-size: 9px;
-  justify-content: center;
-  align-items: center;
   margin: -10px;
   padding: 5px 8px;
   color: white;
@@ -145,7 +138,7 @@ body {
 }
 
 .carte_restaurant a {
-  text-decoration: none;
+  @include text_list_none;
 }
 
 .carte_restaurant .carte_image {
@@ -180,10 +173,9 @@ body {
 }
 
 .carte_contenu span {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
+  @include center;
   padding-left: 60px;
   color: black;
+  font-size: 20px;
 }
 /********** FIN RESTAURANT **********/

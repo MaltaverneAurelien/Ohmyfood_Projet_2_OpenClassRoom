@@ -71,7 +71,7 @@
 }
 
 .menu_plat a {
-    text-decoration: none;
+    @include text_list_none;
 }
 
 .menu_plat span {
@@ -83,13 +83,11 @@
 /********** FIN BLOC POUR LE PLAT **********/
 /********** MENU BTN **********/
 .menu_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
 }
 
 .menu_btn a {
-    text-decoration: none;
+    @include text_list_none;
 }
 /********** FIN MENU BTN **********/
 /********** FIN MENU **********/

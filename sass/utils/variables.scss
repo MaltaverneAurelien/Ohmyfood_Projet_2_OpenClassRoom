@@ -5,6 +5,18 @@ $color-secondary: #FF79DA;
 $color-tertiaire: #99E2D0;
 
 $color-icone: #696969;
+
 $color-background-primaire: white;
 $color-background-secondary: #F2F2F2;
 $color-background-teriaire: #F8F8F8;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin text_list_none {
+    text-decoration: none;
+    list-style-type: none;
+}
