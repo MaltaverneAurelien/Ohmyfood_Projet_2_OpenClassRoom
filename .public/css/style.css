@@ -11,75 +11,20 @@
   width: 180px;
 }
 
-/********** HEADER **********/
-header {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-}
-
-/********** FIN HEADER **********/
-/********** FOOTER **********/
-footer {
-  width: 100%;
-  background-color: #3a3a3a;
-  color: white;
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-  margin: 0;
-  padding: 17px;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0 0 25px 15px;
-  list-style-type: none;
-}
-
-footer li {
-  padding: 5px 0;
-}
-
-footer i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  font-size: 12px;
-  padding-right: 5px;
-}
-
-.footer_icone {
-  display: flex;
-  align-items: center;
-}
-
-/********** FIN FOOTER **********/
 /********** MENU **********/
 .menu .carte_image {
   object-fit: cover;
   width: 100%;
-  height: 200px;
 }
 
 .menu_contenu {
-  display: flex;
+  display: inline-flex;
+  width: 100%;
   flex-direction: column;
+  margin-top: -30px;
   background-color: #F2F2F2;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .menu_contenu h1 {
@@ -168,6 +113,73 @@ footer i {
 
 /********** FIN MENU BTN **********/
 /********** FIN MENU **********/
+/********** HEADER **********/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 1px 12px 1px rgba(68, 68, 68, 0.43);
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+  left: 20px;
+  color: black;
+}
+
+.logo {
+  margin: 0 auto;
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+}
+
+/********** FIN HEADER **********/
+/********** FOOTER **********/
+footer {
+  width: 100%;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  margin: 0;
+  padding: 17px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 25px 15px;
+  list-style-type: none;
+}
+
+footer li {
+  padding: 5px 0;
+}
+
+footer i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+.footer_icone {
+  display: flex;
+  align-items: center;
+}
+
+/********** FIN FOOTER **********/
 html {
   height: 100%;
 }
@@ -243,23 +255,11 @@ body {
 .carte_fonctionnement {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 90%;
-  height: 70px;
-  margin: 20px;
+  margin-bottom: 25px;
+  padding: 15px;
   background-color: #F8F8F8;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  position: relative;
-}
-
-.carte_fonctionnement a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #696969;
-  text-decoration: none;
-  list-style-type: none;
 }
 
 .carte_fonctionnement h4 {
@@ -268,21 +268,21 @@ body {
 }
 
 .carte_fonctionnement span {
-  font-size: 15px;
-  padding: 0 25px 0 35px;
+  padding-right: 20px;
+  color: #696969;
 }
 
 .carte_fonctionnement p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  font-size: 9px;
-  margin: -10px;
-  padding: 5px 8px;
+  position: relative;
+  left: -25px;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
   color: white;
   background-color: #9356DC;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 /********** FIN FONCTIONNEMENT **********/
@@ -300,7 +300,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 200px;
-  margin: 20px;
   background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -312,41 +311,40 @@ body {
 }
 
 .carte_restaurant .carte_image {
+  object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  object-fit: cover;
   width: 100%;
   height: 130px;
 }
 
-.carte_restaurant .carte_titre {
-  padding-left: 20px;
-  width: 60%;
+.carte_titre {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
 }
 
 .carte_titre h4 {
-  display: flex;
   margin: 0;
-  padding: 10px 0 5px 0;
   color: black;
+  margin: 5px;
 }
 
 .carte_titre p {
-  display: flex;
   margin: 0;
-  font-size: 15px;
   color: black;
+  margin: 5px;
 }
 
 .carte_contenu {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
 }
 
 .carte_contenu span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 60px;
+  margin: 0;
   color: black;
   font-size: 20px;
 }

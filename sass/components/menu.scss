@@ -2,15 +2,16 @@
 .menu .carte_image {
     object-fit: cover;
     width: 100%;
-    height: 200px;
 }
 
 .menu_contenu {
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     flex-direction: column;
+    margin-top: -30px;
     background-color: $color-background-secondary;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
   
 .menu_contenu h1 {
