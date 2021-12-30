@@ -8,4 +8,9 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     border-radius: 30px;
     width: 180px;
+    transition: transform 450ms;
+    &:hover {
+        background: linear-gradient(175deg, hsl(317, 100%, 79%) 15%, hsl(267, 66%, 65%) 90%);
+        box-shadow: 7px 7px 5px rgba(0,0,0,0.4);
+    }
 }
