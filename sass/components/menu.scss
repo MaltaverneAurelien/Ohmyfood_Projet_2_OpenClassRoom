@@ -1,6 +1,5 @@
 /********** MENU **********/
 .menu .carte_image {
-    object-fit: cover;
     width: 100%;
 }
 
@@ -34,41 +33,40 @@
 .menu_plat {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 1.3em;
 }
 
 .menu_plat .menu_plat_carte {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 70px;
-    margin: 0 0 1em 0;
-    padding: 0.2em;
+    justify-content: space-between;
+    margin-bottom: 20px;
     background-color: $color-background-primaire;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     border-radius: 20px;
     color: black;
-    position: relative;
+}
+
+.menu_plat .menu_plat_titre {
+    display: flex;
+    flex-direction: column;
 }
 
 .menu_plat h3 {
     font-weight: 300;
-    width: 2.5em;
-    padding-bottom: 0.2em;
-    border-bottom: 0.2em solid $color-tertiaire;
+    width: 35px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $color-tertiaire;
 }
 
 .menu_plat h4 {
     font-size: 19px;
     margin: 0;
-    padding: 0.4em;
+    padding: 10px 0 5px 10px;
 }
 
 .menu_plat p {
     font-size: 14px;
     margin: 0;
-    padding: 0.4em;
+    padding: 5px 0 10px 10px;
 }
 
 .menu_plat a {
@@ -76,10 +74,11 @@
 }
 
 .menu_plat span {
-    position: absolute;
+    display: flex;
+    position: relative;
+    left: -15px;
+    top: 40px;
     font-weight: bold;
-    padding-left: 85%;
-    padding-top: 12%;
 }
 /********** FIN BLOC POUR LE PLAT **********/
 /********** MENU BTN **********/
