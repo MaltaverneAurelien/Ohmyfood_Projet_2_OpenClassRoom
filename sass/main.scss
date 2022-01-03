@@ -42,7 +42,7 @@ body {
 .accueil_explorer {
   @include center;
   flex-direction: column;
-  background-color: $color-background-teriaire;
+  background-color: $color-background-tertiaire;
 }
 
 .accueil_explorer h1 {
@@ -80,7 +80,7 @@ body {
   align-items: center;
   margin-bottom: 25px;
   padding: 15px;
-  background-color: $color-background-teriaire;
+  background-color: $color-background-tertiaire;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 20px;
 }

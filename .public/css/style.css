@@ -16,6 +16,23 @@
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
 }
 
+.btn_nouveau {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  color: #008766;
+  right: 55px;
+  bottom: -12px;
+  padding: 7px;
+  background: #99E2D0;
+  border-radius: 2px;
+  transition: transform 450ms;
+}
+.btn_nouveau:hover {
+  background: linear-gradient(175deg, #ff94e1 15%, #a06be1 90%);
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+}
+
 /********** MENU **********/
 .menu .carte_image {
   width: 100%;
