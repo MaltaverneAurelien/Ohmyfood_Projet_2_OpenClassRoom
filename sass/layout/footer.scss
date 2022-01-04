@@ -18,6 +18,10 @@ footer ul {
     margin: 0;
     padding: 0 0 25px 15px;
     list-style-type: none;
+    @include tablette-only{
+        flex-direction: inherit;
+        justify-content: space-around;
+    }
 }
 
 footer li {
@@ -25,9 +29,6 @@ footer li {
 }
 
 footer i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 20px;
     font-size: 12px;
     padding-right: 5px;

@@ -21,21 +21,44 @@
   text-align: center;
   font-weight: 500;
   color: #008766;
-  right: 55px;
-  bottom: -12px;
+  right: 15px;
+  bottom: 150px;
   padding: 7px;
   background: #99E2D0;
   border-radius: 2px;
   transition: transform 450ms;
 }
 .btn_nouveau:hover {
-  background: linear-gradient(175deg, #ff94e1 15%, #a06be1 90%);
+  background: #008766;
+  color: #99E2D0;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .btn_nouveau {
+    padding: 5px;
+    bottom: 80%;
+  }
 }
 
 /********** MENU **********/
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .menu .carte_image {
+  object-fit: cover;
   width: 100%;
+  height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .menu .carte_image {
+    height: 400px;
+  }
 }
 
 .menu_contenu {
@@ -46,6 +69,12 @@
   background-color: #F2F2F2;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .menu_contenu {
+    justify-content: center;
+    width: 90%;
+  }
 }
 
 .menu_contenu h1 {
@@ -67,9 +96,21 @@
 
 /********** FIN TITRE DU MENU **********/
 /********** BLOC POUR LE PLAT **********/
-.menu_plat {
+.main_menu_plat {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main_menu_plat {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu_plat {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .menu_plat .menu_plat_carte {
@@ -181,15 +222,18 @@ footer ul {
   padding: 0 0 25px 15px;
   list-style-type: none;
 }
+@media screen and (min-width: 768px) {
+  footer ul {
+    flex-direction: inherit;
+    justify-content: space-around;
+  }
+}
 
 footer li {
   padding: 5px 0;
 }
 
 footer i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 20px;
   font-size: 12px;
   padding-right: 5px;
@@ -206,6 +250,16 @@ body {
   width: 100%;
   max-width: 767px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 967px;
+  }
+}
+@media screen and (min-width: 967px) {
+  body {
+    max-width: 1920px;
+  }
 }
 
 /********** ACCUEIL **********/
@@ -266,7 +320,21 @@ body {
 }
 
 .fonctionnement h1 {
-  margin: 40px 15px 20px 15px;
+  margin: 40px 15px 20px 25px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main_carte_fonctionnement {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .carte_fonctionnement {
@@ -277,6 +345,12 @@ body {
   background-color: #F8F8F8;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .carte_fonctionnement {
+    margin: 0;
+    width: 27%;
+  }
 }
 
 .carte_fonctionnement h4 {
@@ -310,8 +384,22 @@ body {
   padding-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .main_restaurant {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .restaurants h1 {
-  margin: 40px 0 20px 15px;
+  margin: 40px 0 20px 25px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .carte_restaurant {
@@ -321,6 +409,14 @@ body {
   background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .carte_restaurant {
+    width: 20%;
+    height: inherit;
+    margin: 0;
+  }
 }
 
 .carte_restaurant a {
@@ -334,6 +430,11 @@ body {
   border-top-left-radius: 15px;
   width: 100%;
   height: 130px;
+}
+@media screen and (min-width: 768px) {
+  .carte_restaurant .carte_image {
+    height: 150px;
+  }
 }
 
 .carte_titre {

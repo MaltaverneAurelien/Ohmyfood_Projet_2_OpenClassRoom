@@ -7,9 +7,6 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
-@import "./responsive/desktop.scss";
-@import "./responsive/tablette.scss";
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
 body {
@@ -17,6 +14,12 @@ body {
   width: 100%;
   max-width: 767px;
   margin: 0 auto;
+  @include tablette-only {
+    max-width: 967px;
+  }
+  @include desktop-only {
+    max-width: 1920px;
+  }
 }
 
 /********** ACCUEIL **********/
@@ -72,7 +75,17 @@ body {
 }
 
 .fonctionnement h1 {
-  margin: 40px 15px 20px 15px;
+  margin: 40px 15px 20px 25px;
+  @include tablette-only {
+    @include center;
+  }
+}
+
+.main_carte_fonctionnement {
+  @include tablette-only {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .carte_fonctionnement {
@@ -83,6 +96,10 @@ body {
   background-color: $color-background-tertiaire;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 20px;
+  @include tablette-only {
+    margin: 0;
+    width: 27%;
+  }
 }
 
 .carte_fonctionnement h4 {
@@ -114,8 +131,18 @@ body {
   padding-bottom: 40px;
 }
 
+.main_restaurant {
+  @include tablette-only {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .restaurants h1 {
-  margin: 40px 0 20px 15px;
+  margin: 40px 0 20px 25px;
+  @include tablette-only {
+    @include center;
+  }
 }
 
 .carte_restaurant {
@@ -125,6 +152,12 @@ body {
   background-color: $color-background-primaire;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 15px;
+  position: relative;
+  @include tablette-only {
+    width: 20%;
+    height: inherit;
+    margin: 0;
+  }
 }
 
 .carte_restaurant a {
@@ -137,6 +170,9 @@ body {
   border-top-left-radius: 15px;
   width: 100%;
   height: 130px;
+  @include tablette-only {
+    height: 150px;
+  }
 }
 
 .carte_titre {

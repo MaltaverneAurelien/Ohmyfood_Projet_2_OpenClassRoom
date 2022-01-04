@@ -11,6 +11,23 @@ $color-background-primaire: white;
 $color-background-secondary: #F2F2F2;
 $color-background-tertiaire: #F8F8F8;
 
+$breakpoints: (
+    tablette: 768px,
+    desktop: 967px
+);
+
+@mixin tablette-only {
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
 @mixin center {
     display: flex;
     align-items: center;

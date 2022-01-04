@@ -20,14 +20,19 @@
     text-align: center;
     font-weight: 500;
     color: $color-nouveau;
-    right: 55px;
-    bottom: -12px;
+    right: 15px;
+    bottom: 150px;
     padding: 7px;
     background: $color-tertiaire;
     border-radius: 2px;
     transition: transform 450ms;
     &:hover {
-        background: linear-gradient(175deg, hsl(317, 100%, 79%) 15%, hsl(267, 66%, 65%) 90%);
+        background: $color-nouveau;
+        color: $color-tertiaire;
         box-shadow: 7px 7px 5px rgba(0,0,0,0.4);
+    }
+    @include tablette-only {
+        padding: 5px;
+        bottom: 80%;
     }
 }
