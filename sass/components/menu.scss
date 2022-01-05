@@ -23,15 +23,14 @@
     background-color: $color-background-secondary;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    @include tablette-only {
-        justify-content: center;
-        width: 90%;
-    }
 }
   
 .menu_contenu h1 {
     font-family: $font-logo;
     font-weight: 400;
+    @include desktop-only {
+        font-size: 30px;
+    }
 }
 /********** TITRE DU MENU **********/
 .menu_titre {
@@ -43,6 +42,9 @@
     display: flex;
     align-items: center;
     font-size: 25px;
+    @include desktop-only {
+        font-size: 30px;
+    }
 }
 /********** FIN TITRE DU MENU **********/
 /********** BLOC POUR LE PLAT **********/
@@ -67,13 +69,24 @@
     margin-bottom: 20px;
     background-color: $color-background-primaire;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    border-radius: 20px;
+    border-radius: 15px;
     color: black;
+
+    &:hover {
+        .btn_menu_plat {
+            width: 50px;
+        }
+        .btn_menu_plat i {
+            transform: rotate(1turn);
+            transition: transform 700ms ease-in-out;
+        }
+    }
 }
 
 .menu_plat .menu_plat_titre {
     display: flex;
     flex-direction: column;
+    width: 75%;
 }
 
 .menu_plat h3 {
@@ -84,36 +97,33 @@
 }
 
 .menu_plat h4 {
-    font-size: 19px;
+    font-size: 15px;
     margin: 0;
     padding: 10px 0 5px 10px;
+    @include tablette-only {
+        font-size: 18px;
+    }
 }
 
 .menu_plat p {
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
     padding: 5px 0 10px 10px;
-}
-
-.menu_plat a {
-    @include text_list_none;
+    @include tablette-only {
+        font-size: 14px;
+    }
 }
 
 .menu_plat span {
     display: flex;
-    position: relative;
-    left: -15px;
-    top: 40px;
+    align-items: flex-end;
+    margin: 0 10px 10px 20px;
     font-weight: bold;
 }
 /********** FIN BLOC POUR LE PLAT **********/
 /********** MENU BTN **********/
 .menu_btn {
     @include center;
-}
-
-.menu_btn a {
-    @include text_list_none;
 }
 /********** FIN MENU BTN **********/
 /********** FIN MENU **********/

@@ -5,7 +5,7 @@
   text-align: center;
   color: white;
   font-weight: 500;
-  background: linear-gradient(175deg, #ff79da 15%, #9356DC 90%);
+  background: linear-gradient(175deg, #ff79da 15%, #9256dc 90%);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   width: 180px;
@@ -13,7 +13,7 @@
 }
 .btn:hover {
   background: linear-gradient(175deg, #ff94e1 15%, #a06be1 90%);
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
 }
 
 .btn_nouveau {
@@ -38,6 +38,19 @@
     padding: 5px;
     bottom: 80%;
   }
+}
+
+.btn_menu_plat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #99E2D0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 15px 15px 0;
+  width: 0%;
+  overflow: hidden;
+  transition: width 700ms ease-in-out;
 }
 
 /********** MENU **********/
@@ -70,16 +83,15 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-@media screen and (min-width: 768px) {
-  .menu_contenu {
-    justify-content: center;
-    width: 90%;
-  }
-}
 
 .menu_contenu h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
+}
+@media screen and (min-width: 967px) {
+  .menu_contenu h1 {
+    font-size: 30px;
+  }
 }
 
 /********** TITRE DU MENU **********/
@@ -92,6 +104,11 @@
   display: flex;
   align-items: center;
   font-size: 25px;
+}
+@media screen and (min-width: 967px) {
+  .menu_titre span {
+    font-size: 30px;
+  }
 }
 
 /********** FIN TITRE DU MENU **********/
@@ -119,13 +136,21 @@
   margin-bottom: 20px;
   background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 15px;
   color: black;
+}
+.menu_plat .menu_plat_carte:hover .btn_menu_plat {
+  width: 50px;
+}
+.menu_plat .menu_plat_carte:hover .btn_menu_plat i {
+  transform: rotate(1turn);
+  transition: transform 700ms ease-in-out;
 }
 
 .menu_plat .menu_plat_titre {
   display: flex;
   flex-direction: column;
+  width: 75%;
 }
 
 .menu_plat h3 {
@@ -136,27 +161,31 @@
 }
 
 .menu_plat h4 {
-  font-size: 19px;
+  font-size: 15px;
   margin: 0;
   padding: 10px 0 5px 10px;
 }
+@media screen and (min-width: 768px) {
+  .menu_plat h4 {
+    font-size: 18px;
+  }
+}
 
 .menu_plat p {
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
   padding: 5px 0 10px 10px;
 }
-
-.menu_plat a {
-  text-decoration: none;
-  list-style-type: none;
+@media screen and (min-width: 768px) {
+  .menu_plat p {
+    font-size: 14px;
+  }
 }
 
 .menu_plat span {
   display: flex;
-  position: relative;
-  left: -15px;
-  top: 40px;
+  align-items: flex-end;
+  margin: 0 10px 10px 20px;
   font-weight: bold;
 }
 
@@ -166,11 +195,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.menu_btn a {
-  text-decoration: none;
-  list-style-type: none;
 }
 
 /********** FIN MENU BTN **********/
@@ -262,6 +286,11 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 /********** ACCUEIL **********/
 .accueil_formulaire {
   display: flex;
@@ -301,11 +330,6 @@ body {
   text-align: center;
   font-weight: 300;
   margin: 0 30px 0 30px;
-}
-
-.accueil_explorer a {
-  text-decoration: none;
-  list-style-type: none;
 }
 
 /********** FIN ACCUEIL **********/
@@ -352,6 +376,9 @@ body {
     width: 27%;
   }
 }
+.carte_fonctionnement:hover {
+  background: #e4d5f6;
+}
 
 .carte_fonctionnement h4 {
   margin: 0;
@@ -373,7 +400,7 @@ body {
   font-size: 14px;
   text-align: center;
   color: white;
-  background-color: #9356DC;
+  background-color: #9256dc;
   border-radius: 50%;
 }
 
@@ -417,11 +444,6 @@ body {
     height: inherit;
     margin: 0;
   }
-}
-
-.carte_restaurant a {
-  text-decoration: none;
-  list-style-type: none;
 }
 
 .carte_restaurant .carte_image {

@@ -1,3 +1,4 @@
+@import "./utils/animation.scss";
 @import "./utils/variables.scss";
 @import "./utils/functions.scss";
 
@@ -20,6 +21,10 @@ body {
   @include desktop-only {
     max-width: 1920px;
   }
+}
+
+a {
+  @include text_list_none;
 }
 
 /********** ACCUEIL **********/
@@ -58,10 +63,6 @@ body {
   font-weight: 300;
   margin: 0 30px 0 30px;
 }
-
-.accueil_explorer a {
-  @include text_list_none;
-}
 /********** FIN ACCUEIL **********/
 
 .contenu_fr {
@@ -99,6 +100,9 @@ body {
   @include tablette-only {
     margin: 0;
     width: 27%;
+  }
+  &:hover {
+    background: hsl(267, 66%, 90%);
   }
 }
 
@@ -158,10 +162,6 @@ body {
     height: inherit;
     margin: 0;
   }
-}
-
-.carte_restaurant a {
-  @include text_list_none;
 }
 
 .carte_restaurant .carte_image {
