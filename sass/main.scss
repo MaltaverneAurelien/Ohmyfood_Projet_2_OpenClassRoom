@@ -103,6 +103,7 @@ a {
   }
   &:hover {
     background: hsl(267, 66%, 90%);
+    
   }
 }
 
@@ -110,7 +111,7 @@ a {
   @include titre_h;
 }
 
-.carte_fonctionnement span {
+.carte_fonctionnement i {
   padding-right: 20px;
   color: $color-icone;
 }
@@ -158,7 +159,6 @@ a {
   border-radius: 15px;
   position: relative;
   @include tablette-only {
-    width: 20%;
     height: inherit;
     margin: 0;
   }
@@ -173,6 +173,10 @@ a {
   @include tablette-only {
     height: 150px;
   }
+}
+
+.main_restaurant a {
+  width: 20%;
 }
 
 .carte_titre {
@@ -198,7 +202,7 @@ a {
   width: 95%;
 }
 
-.carte_contenu span {
+.carte_contenu i {
   @include titre_h;
   font-size: 20px;
 }
