@@ -1,52 +1,14 @@
-// $num-menu: 9;
-// $anim-dur: 5000ms;
-// $anim-delay: $anim-dur / $num-menu;
+.menu_carte_plat {
+        animation-delay: 5000ms;
+        animation: menu_carte_plat-menu_plat 5000ms;
+}
 
-// .menu_plat_carte {
-//     &__bar {
-//         animation: menu 1000ms;
-//         @for $i from 1 through $num-menu {
-//             &--#{$i} {
-//                 animation-delay: $anim-delay * $i;
-//             }
-//         }
-//     }
-// }
-
-// .menu_plat_carte__menu--1 {
-//     animation-delay: 200ms;
-// }
-// .menu_plat_carte__menu--2 {
-//     animation-delay: 400ms;
-// }
-// .menu_plat_carte__menu--3 {
-//     animation-delay: 600ms;
-// }
-// .menu_plat_carte__menu--4 {
-//     animation-delay: 800ms;
-// }
-// .menu_plat_carte__menu--5 {
-//     animation-delay: 1000ms;
-// }
-// .menu_plat_carte__menu--6 {
-//     animation-delay: 1200ms;
-// }
-// .menu_plat_carte__menu--7 {
-//     animation-delay: 1400ms;
-// }
-// .menu_plat_carte__menu--8 {
-//     animation-delay: 1600ms;
-// }
-// .menu_plat_carte__menu--9 {
-//     animation-delay: 1800ms;
-// }
-
-// @keyframes menu {
-//     0% {
-//         transform: scaleY(0.5);
-        
-//     }
-//     100% {
-//         transform: scaleY(1.0);
-//     }
-// }
+@keyframes menu_carte_plat-menu_plat {
+    100% {
+        transform: translate(50px, 7vh);
+        opacity: 0;
+    }
+    100% {
+         opacity: 1;
+    }
+}
