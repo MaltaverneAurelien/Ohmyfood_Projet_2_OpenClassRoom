@@ -71,6 +71,7 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     border-radius: 15px;
     color: black;
+    /********** ANIMATION BOUTTON MENU PLAT **********/
     &:hover {
         .btn_menu_plat {
             width: 50px;
@@ -80,6 +81,7 @@
             transition: transform 700ms ease-in-out;
         }
     }
+    /********** FIN ANIMATION BOUTTON MENU PLAT **********/
 }
 
 .menu_plat .menu_plat_titre {

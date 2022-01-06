@@ -37,6 +37,7 @@
     }
 }
 
+/********** ANIMATION BOUTTON MENU PLAT **********/
 .btn_menu_plat {
     @include center;
     color: $color-background-primaire;
@@ -47,3 +48,4 @@
     overflow: hidden;
     transition: width 700ms ease-in-out;
 }
+/********** FIN ANIMATION BOUTTON MENU PLAT**********/
