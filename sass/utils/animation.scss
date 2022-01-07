@@ -1,8 +1,7 @@
 /********** ANIMATION MENU **********/
 .menu_plat_carte{
-
-  animation: anim_menu_carte 2s ease-out backwards;
-  animation-delay: 300ms;
+  animation: anim_menu_carte 1.5s ease-out backwards;
+  animation-delay: 0.3s;
 }
 
 .menu_plat_carte:nth-child(1) {animation-delay: 0.0s; }
@@ -20,3 +19,62 @@
   }
 }
 /********** FIN ANIMATION MENU **********/
+
+/********** ANIMATION COEUR **********/
+.coeur_contenu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  clip-path: url(#svgPath);
+
+
+  &:hover {
+    animation: battement_coeur 0.6s 0.3s infinite;
+
+    &::before {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    transform-origin: center 60%;
+ }
+ &.active {
+    animation: battement_coeur 0.6s 0.3s forwards;
+ }
+}
+
+.coeur_stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: red;
+}
+
+@keyframes battement_coeur {
+  0% {
+    transform: scale(1);
+ }
+
+ 30% {
+    transform: scale(1.2);
+ }
+
+ 60% {
+    transform: scale(1);
+ }
+}
+/********** FIN ANIMATION COEUR **********/
