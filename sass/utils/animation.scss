@@ -46,7 +46,7 @@
     background-image: linear-gradient($color-primaire 20%, $color-secondary);
     opacity: 0;
     transform: scale(0);
-    transition: transform 0.2s linear, opacity 0.2s linear;
+    transition: transform 0.3s linear, opacity 0.3s linear;
     transform-origin: center 60%;
  }
  &.active {
@@ -61,6 +61,7 @@
   top: 0;
   left: 0;
 }
+
 
 @keyframes battement_coeur {
   0% {
