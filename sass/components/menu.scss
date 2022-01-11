@@ -3,6 +3,7 @@
     @include tablette-only {
         @include center;
         flex-direction: column;
+        background: $color-background-tertiaire;
     }
 }
 
@@ -23,6 +24,9 @@
     background-color: $color-background-secondary;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    @include tablette-only {
+        width: 90%;
+     }
 }
   
 .menu_contenu h1 {
@@ -35,6 +39,7 @@
 /********** TITRE DU MENU **********/
 .menu_titre {
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
