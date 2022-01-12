@@ -32,6 +32,10 @@
   }
   &:hover {
     animation: battement_coeur 0.8s 0.3s infinite;
+    .coeur_stroke {
+      display: none;
+    }
+
     &::before {
       transform: scale(1);
       opacity: 1;

@@ -50,6 +50,9 @@
 .coeur_contenu:hover {
   animation: battement_coeur 0.8s 0.3s infinite;
 }
+.coeur_contenu:hover .coeur_stroke {
+  display: none;
+}
 .coeur_contenu:hover::before {
   transform: scale(1);
   opacity: 1;
