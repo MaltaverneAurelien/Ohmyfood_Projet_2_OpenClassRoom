@@ -355,7 +355,7 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
   margin: 0;
-  padding: 17px;
+  padding: 18px;
 }
 @media screen and (min-width: 768px) {
   footer h2 {
@@ -369,7 +369,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 0 25px 15px;
+  padding: 0 0 25px 25px;
   list-style-type: none;
 }
 @media screen and (min-width: 768px) {

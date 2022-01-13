@@ -8,7 +8,7 @@ footer h2 {
     font-family: $font-logo;
     font-weight: 100;
     margin: 0;
-    padding: 17px;
+    padding: 18px;
     @include tablette-only {
         @include center;
     }
@@ -18,7 +18,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 0 25px 15px;
+    padding: 0 0 25px 25px;
     list-style-type: none;
     @include tablette-only{
         flex-direction: inherit;
