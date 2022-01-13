@@ -47,6 +47,7 @@ a {
   z-index: -1000;
 
   animation: fadeInAnimation ease 2s infinite;
+  -webkit-animation: fadeInAnimation ease 2s infinite;
   animation-iteration-count: 1;
 }
 
