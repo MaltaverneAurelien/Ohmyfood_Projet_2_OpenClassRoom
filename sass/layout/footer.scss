@@ -2,6 +2,12 @@
 footer {
     background-color:#3a3a3a;
     color: white;
+    @include tablette-only {
+        min-height: 300px;
+    }
+    @include desktop-only {
+        min-height: inherit;
+    }
 }
 
 footer h2 {

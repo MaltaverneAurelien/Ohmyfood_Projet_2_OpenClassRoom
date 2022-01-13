@@ -13,14 +13,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  max-width: 767px;
   margin: 0 auto;
-  @include tablette-only {
-    max-width: 967px;
-  }
-  @include desktop-only {
-    max-width: 1920px;
-  }
 }
 
 h4, p {
@@ -48,6 +41,9 @@ a {
 
   animation: fadeInAnimation ease 2s infinite;
   -webkit-animation: fadeInAnimation ease 2s infinite;
+  -moz-animation: fadeInAnimation ease 2s infinite; /* Firefox < 16 */
+  -ms-animation: fadeInAnimation ease 2s infinite; /* Internet Explorer */
+  -o-animation: fadeInAnimation ease 2s infinite; /* Opera < 12.1 */
   animation-iteration-count: 1;
 }
 
@@ -273,6 +269,9 @@ a {
 .restaurants {
   background-color: $color-background-secondary;
   padding-bottom: 40px;
+  @include tablette-only {
+    padding-bottom: 80px;
+  }
 }
 
 .main_restaurant {
