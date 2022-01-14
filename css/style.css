@@ -1,27 +1,27 @@
 /********** ANIMATION MENU **********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 .menu_plat_carte {
-  animation: anim_menu_carte 1.7s 1s ease-out backwards;
+  animation: anim_menu_carte 0.7s 1s ease-out backwards;
 }
 
 .menu_plat_carte:nth-child(1) {
-  animation-delay: 1s;
+  animation-delay: 0.2s;
 }
 
 .menu_plat_carte:nth-child(2) {
-  animation-delay: 1.2s;
+  animation-delay: 0.4s;
 }
 
 .menu_plat_carte:nth-child(3) {
-  animation-delay: 1.4s;
+  animation-delay: 0.6s;
 }
 
 .menu_plat_carte:nth-child(4) {
-  animation-delay: 1.6s;
+  animation-delay: 0.8s;
 }
 
 .menu_plat_carte:nth-child(5) {
-  animation-delay: 1.8s;
+  animation-delay: 1s;
 }
 
 @keyframes anim_menu_carte {
@@ -69,9 +69,6 @@
   transition: transform 0.3s linear, opacity 0.3s linear;
   transform-origin: center 60%;
 }
-.coeur_contenu.active {
-  animation: battement_coeur 0.6s 0.3s forwards;
-}
 
 .coeur_stroke {
   width: 100%;
@@ -82,32 +79,6 @@
   left: 0;
 }
 
-@keyframes battement_coeur {
-  0% {
-    transform: scale(0.6);
-    @media screen and (min-width: 767px) {
-      transform: scale(0.7);
-    }
-  }
-  20% {
-    transform: scale(0.8);
-    @media screen and (min-width: 767px) {
-      transform: scale(0.9);
-    }
-  }
-  40% {
-    transform: scale(0.6);
-    @media screen and (min-width: 767px) {
-      transform: scale(0.7);
-    }
-  }
-  100% {
-    transform: scale(0.6);
-    @media screen and (min-width: 767px) {
-      transform: scale(0.7);
-    }
-  }
-}
 /********** FIN ANIMATION COEUR **********/
 .btn {
   padding: 15px 20px 15px 20px;
@@ -272,6 +243,9 @@
   display: flex;
   flex-direction: column;
   width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu_plat h3 {
@@ -687,6 +661,11 @@ a {
 }
 @media screen and (min-width: 767px) {
   .restaurants {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .restaurants {
     padding-bottom: 80px;
   }
 }
@@ -695,6 +674,37 @@ a {
   .main_restaurant {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .bloc_restaurant_1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .bloc_restaurant_1 {
+    display: flex;
+    justify-content: inherit;
+    flex-direction: inherit;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .bloc_restaurant_2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .bloc_restaurant_2 {
+    display: flex;
+    justify-content: inherit;
+    flex-direction: inherit;
+    width: 100%;
   }
 }
 
@@ -721,6 +731,11 @@ a {
 @media screen and (min-width: 767px) {
   .carte_restaurant {
     height: inherit;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .carte_restaurant {
+    height: inherit;
     margin: 0;
   }
 }
@@ -738,8 +753,10 @@ a {
   }
 }
 
-.main_restaurant a {
-  width: 20%;
+@media screen and (min-width: 1025px) {
+  .main_restaurant a {
+    min-width: 40%;
+  }
 }
 
 .carte_titre {

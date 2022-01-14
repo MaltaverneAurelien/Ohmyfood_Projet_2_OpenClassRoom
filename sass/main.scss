@@ -269,6 +269,9 @@ a {
   background-color: $color-background-secondary;
   padding-bottom: 40px;
   @include tablette-only {
+    padding-bottom: 60px;
+  }
+  @include desktop-only {
     padding-bottom: 80px;
   }
 }
@@ -277,6 +280,33 @@ a {
   @include tablette-only {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+.bloc_restaurant_1 {
+  @include tablette-only {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop-only {
+    display: flex;
+    justify-content: inherit;
+    flex-direction: inherit;
+    width: 100%;
+  }
+}
+
+.bloc_restaurant_2 {
+  @include tablette-only {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop-only {
+    display: flex;
+    justify-content: inherit;
+    flex-direction: inherit;
+    width: 100%;
   }
 }
 
@@ -297,6 +327,9 @@ a {
   position: relative;
   @include tablette-only {
     height: inherit;
+  }
+  @include desktop-only {
+    height: inherit;
     margin: 0;
   }
 }
@@ -313,7 +346,9 @@ a {
 }
 
 .main_restaurant a {
-  width: 20%;
+  @include desktop-only {
+    min-width: 40%;
+  }
 }
 
 .carte_titre {
