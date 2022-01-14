@@ -42,7 +42,7 @@
   clip-path: url(#svgPath);
   transform: scale(0.6);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .coeur_contenu {
     transform: scale(0.7);
   }
@@ -85,25 +85,25 @@
 @keyframes battement_coeur {
   0% {
     transform: scale(0.6);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       transform: scale(0.7);
     }
   }
   20% {
     transform: scale(0.8);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       transform: scale(0.9);
     }
   }
   40% {
     transform: scale(0.6);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       transform: scale(0.7);
     }
   }
   100% {
     transform: scale(0.6);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       transform: scale(0.7);
     }
   }
@@ -143,7 +143,7 @@
   color: #99E2D0;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .btn_nouveau {
     padding: 5px;
     bottom: 80%;
@@ -166,7 +166,7 @@
 
 /********** FIN ANIMATION BOUTTON MENU PLAT**********/
 /********** MENU **********/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu {
     display: flex;
     align-items: center;
@@ -181,7 +181,7 @@
   width: 100%;
   height: 250px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu .carte_image {
     height: 400px;
   }
@@ -196,7 +196,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu_contenu {
     width: 90%;
   }
@@ -236,13 +236,13 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .main_menu_plat {
     width: 30%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu_plat {
     display: flex;
     justify-content: space-around;
@@ -286,7 +286,7 @@
   margin: 0;
   padding: 10px 0 5px 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu_plat h4 {
     font-size: 18px;
   }
@@ -297,7 +297,7 @@
   margin: 0;
   padding: 5px 0 10px 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu_plat p {
     font-size: 14px;
   }
@@ -351,7 +351,7 @@ footer {
   background-color: #3a3a3a;
   color: white;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   footer {
     min-height: 300px;
   }
@@ -368,7 +368,7 @@ footer h2 {
   margin: 0;
   padding: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   footer h2 {
     display: flex;
     align-items: center;
@@ -383,7 +383,7 @@ footer ul {
   padding: 0 0 25px 25px;
   list-style-type: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   footer ul {
     flex-direction: inherit;
     justify-content: space-around;
@@ -618,7 +618,7 @@ a {
 .fonctionnement h1 {
   margin: 40px 15px 20px 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .fonctionnement h1 {
     display: flex;
     align-items: center;
@@ -626,7 +626,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .main_carte_fonctionnement {
     display: flex;
     justify-content: space-around;
@@ -642,7 +642,7 @@ a {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .carte_fonctionnement {
     margin: 0;
     width: 27%;
@@ -685,13 +685,13 @@ a {
   background-color: #F2F2F2;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .restaurants {
     padding-bottom: 80px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .main_restaurant {
     display: flex;
     justify-content: space-around;
@@ -701,7 +701,7 @@ a {
 .restaurants h1 {
   margin: 40px 0 20px 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .restaurants h1 {
     display: flex;
     align-items: center;
@@ -718,7 +718,7 @@ a {
   border-radius: 15px;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .carte_restaurant {
     height: inherit;
     margin: 0;
@@ -732,7 +732,7 @@ a {
   width: 100%;
   height: 130px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .carte_restaurant .carte_image {
     height: 150px;
   }
