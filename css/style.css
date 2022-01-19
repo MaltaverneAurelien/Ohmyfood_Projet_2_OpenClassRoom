@@ -20,10 +20,6 @@
   animation-delay: 0.8s;
 }
 
-.menu_plat_carte:nth-child(5) {
-  animation-delay: 1s;
-}
-
 @keyframes anim_menu_carte {
   from {
     opacity: 0;
